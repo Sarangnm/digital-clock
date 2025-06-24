@@ -6,6 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 body{
     background-color: #f0f0f0; 
     color: #0f172a;
@@ -109,7 +114,7 @@ body.dark .formatBtn{
       align-items: center;
       min-height: 100vh;
       text-align: center;
-      padding: 20px;
+      padding: 1rem;
     }
     .themeBtn p,
     .formatBtn p {
