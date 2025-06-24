@@ -107,14 +107,6 @@ body.dark .formatBtn{
     display: none;
 }
 @media (max-width: 600px){
-     body {
-        min-height: 100vh;
-        overflow: hidden;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
     .clock {
       display: flex;
       flex-direction: column;
@@ -123,6 +115,9 @@ body.dark .formatBtn{
       min-height: 100vh;
       text-align: center;
       padding: 1rem;
+    }
+    .buttons{
+        gap: 10px;
     }
     .themeBtn p,
     .formatBtn p {
