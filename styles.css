@@ -102,6 +102,15 @@ body.dark .formatBtn{
     display: none;
 }
 @media (max-width: 600px){
+    .clock {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+    }
     .themeBtn p,
     .formatBtn p {
         display: none; 
@@ -119,5 +128,4 @@ body.dark .formatBtn{
     #date{
     font-size: 1em;
     }
-    
 }
