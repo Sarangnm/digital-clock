@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f0f0f0; 
+    color: #0f172a;
+    transition: background-color 0.3s, color 0.3s;
+}
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.time-row{
+    display: flex;
+    align-items: baseline;
+    gap: 30px;
+}
+#time{
+    font-size: 5em;
+}
+#ampm{
+    font-size: 3em;
+}
+#date{
+    font-size: 1em;
+}
+.buttons{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+}
+#darkmode{
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    cursor: pointer;
+}
+#format{
+    height: 32px;
+    width: 32px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: #111;
+    color: #f0f0f0;
+    cursor: pointer;
+}
+.themeBtn,
+.formatBtn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding-left: 10px;
+}
+#darkmode svg{
+    fill: #f0f0f0;
+}
+body.dark {
+    background-color: #111;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+body.dark #darkmode{
+    background-color: #f0f0f0;
+}
+body.dark #darkmode svg{
+    fill: rgb(0, 0, 0);
+}
+body.dark #format{
+    background-color: #f0f0f0;
+    color: #111;
+}
+body.dark .themeBtn,
+body.dark .formatBtn{
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+.hidden {
+    display: none;
+}
+@media (max-width: 600px){
+    .themeBtn p,
+    .formatBtn p {
+        display: none; 
+    }
+    .themeBtn,
+    .formatBtn{
+        padding-left: 0;
+    }
+    #time{
+    font-size: 3em;
+    }
+    #ampm{
+    font-size: 2em;
+    }
+    #date{
+    font-size: 1em;
+    }
+    
+}
